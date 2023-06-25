@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: var(--Pale-blue);
+}
+p {
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+}
+.container {
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 100px auto;
+}
+.hero-picture {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.order {
+  margin: 30px 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.order-summery h1 {
+  color: var(--Dark-blue);
+  font-size: 25px;
+  font-weight: 900;
+}
+
+/* anual plan section  */
+.annual-plan {
+  padding: 0 20px;
+  display: flex;
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+  margin: 5px 0 20px;
+}
+
+.annual-plan img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  align-self: center;
+}
+
+.change-plan {
+  font-size: 14px;
+  color: var(--Bright-blue);
+  font-weight: 700;
+  align-self: center;
+  margin-left: 70px;
+}
+.change-plan:hover {
+  text-decoration: none;
+  color: hsl(245, 67%, 62%);
+}
+/* price plan  */
+.plan-price {
+  margin: 5px 0 0 15px;
+}
+.plan-price h2 {
+  color: var(--Dark-blue);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.plan-price p {
+  margin-top: 0;
+}
+
+/* buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 13px 40px;
+}
+
+.approve-payment {
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  box-shadow: 5px 10px;
+}
+.approve-payment:hover {
+  background-color: hsl(245, 67%, 62%);
+}
+
+.cancel-payment {
+  background-color: white;
+  color: var(--Desaturated-blue);
+}
+.cancel-payment:hover {
+  color: var(--Dark-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 350px;
+    margin: auto;
+  }
+  .order {
+    margin: 20px;
+  }
+
+  .order-summery h1 {
+    font-size: 20px;
+  }
+  .order-summery p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .change-plan {
+    margin-left: 60px;
+  }
+  .annual-plan {
+    margin: 25px 0 20px 0;
+  }
+  .btn {
+    padding: 15px;
+  }
+}

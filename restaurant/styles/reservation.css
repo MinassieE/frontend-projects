@@ -1,0 +1,89 @@
+
+
+.form-container {
+    background-color: hsla(30, 8%, 5%, 1);
+    margin: 100px auto;
+    padding: 50px;
+    width: 800px;
+    align-items: center;
+    text-align: center;
+}
+
+.name-phone {
+    width: 50%;
+    margin: 5px;
+} 
+
+.input-two{
+    width: 31%; 
+    margin: 9px;
+}
+.icon-wrapper-1{
+    margin-left: 0;
+}
+
+.date-time {
+    width: 100%;
+}
+.input-field {
+    background-color: hsla(210, 4%, 11%, 1);
+    color: white;
+    height: 56px;
+    padding: 10px 20px;
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.reservation-wrapper {
+    display: flex;
+    margin: 20px;
+}
+.if-margin {
+    margin: 5px;
+}
+.text-area {
+    width: 100%;
+}
+
+.reservation-button {
+    width: 100%;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 1120px) {
+   .form-container {
+    width: 600px;
+   }
+    
+}
+
+@media only screen and (max-width: 675px) {
+    .form-container {
+        width: auto;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .reservation-wrapper {
+        display: block;
+    }
+
+    .name-phone {
+        width: 100%;
+    }
+
+    .input-two {
+        width: 100%;
+    }
+
+    .text-area {
+        width: 100%;
+    }
+
+    .reservation-button {
+        width: 100%;
+    }
+
+    .icon-wrapper-1 {
+        margin-left: 5px;
+    }
+}

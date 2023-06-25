@@ -1,0 +1,83 @@
+
+.review {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.testimony {
+    width: 70%;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px;
+}
+.sep-box {
+    border: 2px solid hsl(38, 61%, 73%);
+    padding: 3px 3px;
+    margin: 3px;
+}
+
+.profile {
+    float: left;
+    margin-right: 20px;
+}
+
+.profile-2 {
+    float: right;
+    margin-left: 20px;
+}
+.profile-image {
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.profile-name {
+    color: hsl(38, 61%, 73%);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.single-review {
+    margin: 100px auto;
+    width: 70%;
+}
+.separator {
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid hsl(38, 61%, 73%);
+    width: 70%;
+}
+
+@media only screen and (max-width: 1120px) {
+    .testimony {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .single-review {
+        margin: 60px auto;
+        width: 80%;
+    }
+}
+ 
+@media only screen and (max-width: 675px) {
+    .profile {
+        float: none;
+    }
+    .profile-2 {
+        float: none;
+    }
+
+    .testimony {
+        font-size: 1.1rem;
+    }
+}

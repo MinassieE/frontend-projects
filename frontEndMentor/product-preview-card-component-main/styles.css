@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+} */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: var(--Cream);
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Fraunces", serif;
+}
+
+p {
+  max-width: 230px;
+  color: var(--Dark-grayish-blue);
+}
+
+img {
+  max-width: 100%;
+}
+/* picture {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+} */
+.container {
+  background-color: var(--White);
+  width: 600px;
+  margin: 100px auto;
+  border-radius: 15px;
+  display: flex;
+  /* align-items: center; */
+}
+.perfume-pic {
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* product details */
+.product-detail {
+  margin: 20px 10px 30px 30px;
+  text-align: start;
+}
+
+.product-title {
+  letter-spacing: 5px;
+}
+/* heading */
+.product-heading {
+  color: var(--Very-dark-blue);
+  font-size: 35px;
+}
+/* price */
+.current-price {
+  color: var(--Dark-cyan);
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.old-price {
+  text-decoration: line-through;
+  margin-left: 15px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* add to cart button */
+.btn {
+  display: block;
+  padding: 15px 70px;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--White);
+  background-color: var(--Dark-cyan);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(158, 49%, 14%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 375px){
+  .perfume-pic{
+    content: url(images/image-product-mobile.jpg);
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+  .product-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+  p {
+    max-width: 300px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+  }
+  .product-detail {
+    margin: 10px 20px 20px 20px;
+  }
+  .product-heading {
+    margin: 0;
+    font-size: 28px;
+  }
+  .current-price {
+    margin: 10px 0 15px 0;
+  }
+  .btn{
+    width: 100%;
+    margin: 0;
+  }
+
+}

@@ -1,0 +1,52 @@
+
+.menu-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.menu-subtitle {
+  font-size: 13px;
+}
+
+.menu-list {
+  text-align: center;
+}
+
+.card-detail {
+  text-align: start;
+  margin: 0 50px;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+
+.food-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.menu-price {
+  color: hsl(38, 61%, 73%);
+  font-size: 1rem;
+}
+
+.menu-text {
+  width: 70%;
+  color: hsla(0, 0%, 65%, 1);
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.1rem;
+}
+
+.event-button {
+  text-decoration: none;
+}
+
+
+

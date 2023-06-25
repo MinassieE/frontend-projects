@@ -1,0 +1,21 @@
+
+.location {
+    text-align: center;
+}
+.map {
+    margin: 50px;
+}
+.google-map {
+    width: 600px;
+    height: 450px;
+}
+
+@media only screen and (max-width: 675px) {
+    .map {
+        margin: 20px;
+    }
+
+    .google-map {
+        width: auto;
+    }
+}
